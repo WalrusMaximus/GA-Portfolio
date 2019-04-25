@@ -39,6 +39,9 @@ footer * {
     width: 30% !important;
 }
 
+.contact-wrapper {
+    max-width: 60%;
+}
 
 @media only screen and (max-width : 600px) {
     footer {
@@ -48,5 +51,9 @@ footer * {
 
     .avatar {
         width: 50% !important;
+    }
+
+    .contact-wrapper {
+        max-width: 100%;
     }
   }
