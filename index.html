@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Walrus Maximus - Backend Developer</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+            <a class="navbar-item" href="https://github.com/WalrusMaximus">
+                <img class="me-img" src="./walruslogo.jpeg" width="30" height="36">
+            </a>
+            <div class="navbar-item">
+                <p>Walrus Maximus</p>
+            </div>
+        
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            </div>
+        
+            <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a id="about-btn" class="navbar-item">
+                About Me
+                </a>
+        
+                <a id="work-btn" class="navbar-item">
+                My Work
+                </a>
+        
+                <a id="contact-btn" class="navbar-item">
+                Contact Me
+                </a>
+            </div>
+
+            </div>
+        </nav>
+    </header>
+    <section class="section about-me" id="about_scroll">
+        <div class="container about-img">
+            <div class="box">
+                <h1 class="title has-text-centered">About Me</h1>
+                <div class="container avatar">
+                    <figure class="image is-square">
+                        <img class="is-rounded" src="./profile.jpg" alt="profile picture">
+                    </figure>
+                </div>
+                <br>
+                <p>
+                    My name is Matthew Freeland, but, my friends call me "The Walrus". I am a fullstack developer with a focus on Python frameworks, Javascript,
+                    React, and Database Architecture. 
+                </p>
+                <br>
+                <p>
+                    I have been working in the event space world for a while adjacent to technologists and web developers making conferences and tradeshows tolerable.
+                    Little did I know I was slowly turning into a web developer myself as my responsibilities evolved over time to automate processes more than managing accounts!
+                </p>
+                <br>
+                <p>
+                    I started of my "Tech" career almost a decade ago in the form of process automation and workflow improvement in the form of overly complicated
+                    excel spreadsheets. I inherited lots of broken and unusable tools and unfriendly ERPs in my positions and took it upon myself to improve them for the rest of
+                    the team. This gradually morphed into less of a side project and more of a marketed skill that teams really valued from me. The limitations imposed
+                    by a spreadsheet with no version control being utilized by teams of sometimes hundreds directed me towards the concept of web development to access
+                    these functions with simultaneous users across multiple devices, and so, my web development journey began.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section projects" id="projects_scroll">
+        <div class="box">
+            <h1 class="title has-text-centered">My Projects</h1>
+            <div class="columns">
+                <div class="column">
+                    <h1 class="subtitle has-text-centered">Into The Pit</h1>
+                    <div class="box">
+                        <p class="has-text-centered"><a href="https://github.com/WalrusMaximus/IntoThePit">Github Repo</a></p>
+                        <p class="has-text-centered">Deployment In Progress</p>
+                        <img src="./intothepit.png" alt="into the pit website snapshot">
+                        <p>Into The Pit is a Flask based website using a SQLite Database (PostgreSQL for deployed version)</p>
+                        <p>
+                            The site provides a platform for reviewing venues that regularly host metal and punk shows with mosh pits and allows
+                            users to rank 4 different categories for the venue to determine if the venue is a good concert environment.
+                        </p>
+                        <br>
+                        <p>
+                            The user will also see events coming up at the venue (Delivered from SongKick's API) and be able to view the bands
+                            themselves for when concerts are coming up in the SF Bay Area. They can also favorite the bands or venues and see an
+                            aggregated list of both on their user dashboard at their profile.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <h1 class="subtitle has-text-centered">Unnamed Senior Care Application (In Progress)</h1>
+                    <div class="box">
+                        Details to follow!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section contact-form" id="contact_scroll">
+        <form action="https://formspree.io/thewalrusmaximus@gmail.com" method="POST" >
+            <div class="box contact">
+                <h1 class="title has-text-centered">Contact Me</h1>
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                    <input class="input" type="text" name="name" placeholder="Your name...">
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                    <input class="input" type="email" name="email" placeholder="Your email...">
+                    <!-- <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </span> -->
+                    </div>
+                    <!-- <p class="help is-danger">This email is invalid</p> -->
+                </div>
+
+                <div class="field">
+                    <label class="label">Subject</label>
+                    <div class="control">
+                    <input class="input" type="text" name="subject" placeholder="Email subject...">
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                    <textarea class="textarea" type="textarea" name="message" placeholder="Your message..."></textarea>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <div class="control has-text-centered">
+                    <button class="button is-primary">
+                        Send message
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <div>
+            <p>Walrus Maximus - <a href="https://github.com/WalrusMaximus">Github</a> / <a href="https://www.linkedin.com/in/matthewjfreeland/">Linkedin</a></p> 
+        </div>
+    </footer>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

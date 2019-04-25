@@ -1,0 +1,52 @@
+html, body {
+    width: 99%;
+    height: 99%;
+    background-image: url("./background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    z-index: 1000;
+}
+
+footer {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: white;
+    height: 24px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+footer * {
+    text-align: center;
+}
+
+.about-img {
+    margin-top: 3.25rem;
+    width: 100%;
+}
+
+.avatar {
+    width: 30% !important;
+}
+
+
+@media only screen and (max-width : 600px) {
+    footer {
+        position: relative;
+        margin-left: 1%;
+    }
+
+    .avatar {
+        width: 50% !important;
+    }
+  }
