@@ -19,6 +19,14 @@ header {
     color: white;
 }
 
+.avatar {
+    width: 30% !important;
+}
+
+.wayfarer {
+    margin: 0 auto;
+}
+
 footer {
     position: fixed;
     left: 0%;
@@ -37,10 +45,6 @@ footer * {
 .about-img {
     margin-top: 3.25rem;
     width: 100%;
-}
-
-.avatar {
-    width: 30% !important;
 }
 
 .contact-wrapper {
